@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [{
+        "name": "(Windows) Launch",
+        "type": "cppvsdbg",
+        "request": "launch",
+        "preLaunchTask": "Compile",
+        "program": "F:\\Programming\\vscode\\C++\\.exe\\${fileBasenameNoExtension}.exe",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${fileDirname}",
+        "environment": [],
+        "console": "integratedTerminal"
+    },
+    {
+        "name": "(gdb) Launch",
+        "type": "cppdbg",
+        "request": "launch",
+        "preLaunchTask": "Compile",
+        "program": "F:\\Programming\\vscode\\C++\\.exe\\${fileBasenameNoExtension}.exe",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${fileDirname}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "miDebuggerPath": "D:\\Microsoft VS Code\\mingw64\\bin\\gdb.exe",
+    }
+    ]
+}

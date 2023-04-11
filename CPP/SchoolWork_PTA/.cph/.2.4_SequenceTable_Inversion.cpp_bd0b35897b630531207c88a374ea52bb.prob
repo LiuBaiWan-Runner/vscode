@@ -1,0 +1,1 @@
+{"name":"Local: 2","url":"f:\\Programming\\vscode\\C++\\schoolWork_PTA\\2.4_sequenceTable_Inversion.cpp","tests":[{"id":1670908764617,"input":"10\n1 2 3 4 5 6 7 8 9 10","output":"10 9 8 7 6 5 4 3 2 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Programming\\vscode\\C++\\schoolWork_PTA\\2.4_sequenceTable_Inversion.cpp","group":"local","local":true}

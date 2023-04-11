@@ -1,0 +1,1 @@
+{"name":"Local: Max","url":"f:\\Programming\\vscode\\C++\\Base\\Max.c","tests":[{"id":1677741101622,"input":"8 5","output":"max=8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Programming\\vscode\\C++\\Base\\Max.c","group":"local","local":true}

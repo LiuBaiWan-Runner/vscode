@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(Windows) Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "cmd",
+            "preLaunchTask": "echo",
+            "args": [
+                "/C",
+                "F:\\Programming\\vscode\\C++\\.exe\\${fileBasenameNoExtension}.exe",
+                "&",
+                "echo."
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "console": "integratedTerminal"
+            // 新终端：externalTerminal
+            // 调试控制台：internalConsole
+            // VS Code 的集成终端:integratedTerminal
+        },
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "F:\\Programming\\vscode\\C++\\.exe\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:\\Microsoft VS Code\\mingw64\\bin\\gdb.exe",
+            "preLaunchTask": "echo"
+        },
+    ]
+}

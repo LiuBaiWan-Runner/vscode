@@ -1,0 +1,1 @@
+{"name":"Local: 4","url":"f:\\Programming\\vscode\\C++\\schoolWork_PTA\\4.1_BinaryTree_Maxwidth.cpp","tests":[{"id":1670910638472,"input":"19\nABD##FE###CG#H##I##\n","output":"4\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Programming\\vscode\\C++\\schoolWork_PTA\\4.1_BinaryTree_Maxwidth.cpp","group":"local","local":true}

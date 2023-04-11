@@ -1,0 +1,15 @@
+{
+    "C_Cpp.errorSquiggles": "Enabled",
+    "editor.mouseWheelZoom": true,
+    "files.associations": {
+        "typeinfo": "c",
+        "*.tcc": "c",
+        "xutility": "c",
+        "cmath": "c",
+        "limits": "c",
+        "utility": "c",
+        "type_traits": "c",
+        "concepts": "c",
+        "exception": "c"
+    }
+}

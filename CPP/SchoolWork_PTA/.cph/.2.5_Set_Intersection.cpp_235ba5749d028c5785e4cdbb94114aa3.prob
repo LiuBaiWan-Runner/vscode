@@ -1,0 +1,1 @@
+{"name":"Local: 2","url":"f:\\Programming\\vscode\\C++\\schoolWork_PTA\\2.5_Set_Intersection.cpp","tests":[{"id":1670910233470,"input":"3 4\n10 9 2\n9 10 8 0\n","output":"10 9\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Programming\\vscode\\C++\\schoolWork_PTA\\2.5_Set_Intersection.cpp","group":"local","local":true}
