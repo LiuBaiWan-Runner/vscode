@@ -24,7 +24,7 @@ bool find(char ch[], char c){
 			return false;
 		}
 	}
-	
+	return 0;
 }
 
 bool IsFake(char c, bool light){
