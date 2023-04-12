@@ -3,7 +3,7 @@
  * @author  :LiuBaiWan-Runner
  * @version :V1.0.0
  * @date    :2023-04-11
- * @brief   :
+ * @brief   :https://www.cnblogs.com/jd1412/p/12569244.html
  *          :
  *          :
  */
@@ -63,6 +63,7 @@ int bfs(int x,int y)
             q.push((STU){tx,ty});//编入队列，从当前开始继续向下搜索
          }
      }
+     return 0;
 }
 
 int main(void)
