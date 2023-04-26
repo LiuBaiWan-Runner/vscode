@@ -3,9 +3,9 @@
  * @author  :LiuBaiWan-Runner
  * @version :V1.0.0
  * @date    :2023-04-12
- * @brief   :MT2122事务处理
- *          :
- *          :
+ * @brief   :MT2122事务处理（堆）
+ *          :维护一个大根堆q,输入一个新事务时，先处理已存在的事务
+ *          :处理正在进行的事务，暂停事务，更新数据之后在循环输入新的事务，输出按优先级输出队列事务即可
  */
 #include <iostream>
 #include <queue>

@@ -3,9 +3,9 @@
  * @author  :LiuBaiWan-Runner
  * @version :V1.0.0
  * @date    :2023-04-15
- * @brief   :MT2116栈间
- *          :
- *          :
+ * @brief   :MT2116栈间（栈）
+ *          :栈的操作＋输出中间元素
+ *          :可以使用数组进行模拟，cout和cin会超时，使用scanf和printf
  */
 #include <iostream>
 

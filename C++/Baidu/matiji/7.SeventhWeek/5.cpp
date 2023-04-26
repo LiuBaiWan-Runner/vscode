@@ -3,9 +3,9 @@
  * @author  :LiuBaiWan-Runner
  * @version :V1.0.0
  * @date    :2023-04-15
- * @brief   :MT2120第k小函数值
- *          :
- *          :
+ * @brief   :MT2120第k小函数值（堆）
+ *          :求出所有的情况，随即放入小根堆中
+ *          :第k小即为从堆顶取，第k个值
  */
 #include <iostream>
 #include <queue>

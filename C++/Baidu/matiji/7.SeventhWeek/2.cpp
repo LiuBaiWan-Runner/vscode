@@ -3,9 +3,9 @@
  * @author  :LiuBaiWan-Runner
  * @version :V1.0.0
  * @date    :2023-04-15
- * @brief   :MT2115五彩斑斓的世界
- *          :
- *          :
+ * @brief   :MT2115五彩斑斓的世界(栈)
+ *          :符号匹配问题，利用栈来实现
+ *          :匹配方法使用递归解决
  */
 #include <iostream>
 
