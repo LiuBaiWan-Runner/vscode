@@ -10,13 +10,13 @@
 #include <iostream>
 
 using namespace std;
-const int N = 1e5+7;
+const int N = 1e6+10;
 struct Node{
     int l, r;
     bool flag;
 }bubb[N];
 
-int main()
+int main(void)
 {
     int n, m;
     cin >> n >> m;
