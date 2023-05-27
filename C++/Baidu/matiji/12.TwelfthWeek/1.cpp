@@ -3,7 +3,7 @@
  * @author  :LiuBaiWan-Runner
  * @version :V1.0.0
  * @date    :2023-05-18
- * @brief   :Mt2142逆序
+ * @brief   :MT2142逆序
  *          :
  *          :
  */
