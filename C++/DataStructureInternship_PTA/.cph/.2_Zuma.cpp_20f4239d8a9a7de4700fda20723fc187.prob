@@ -1,0 +1,1 @@
+{"name":"Local: 2_Zuma","url":"f:\\Programming\\vscode\\C++\\DataStructureInternship_PTA\\2_Zuma.cpp","tests":[{"id":1689909143345,"input":"ACCBA\n5\n1 B\n0 A\n2 B\n4 C\n0 A","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Programming\\vscode\\C++\\DataStructureInternship_PTA\\2_Zuma.cpp","group":"local","local":true}
