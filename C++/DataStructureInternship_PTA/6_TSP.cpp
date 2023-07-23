@@ -19,7 +19,7 @@ int n, m, v1, v2;
 int maxlen = 0, topStack[N], top = 0; // 初始化最大路径长度和拓扑排序所需要的栈
 
 struct EdgeNode{ // 有向边结点
-    int tail; // 边的权值为有向边的尾，实现删除边后尾结点的入度减一
+    int VNtail; // 边的权值为有向边的尾，标明边指向哪个结点，实现删除边后尾结点的入度减一
     EN* next = NULL; // 指针指向相同头结点的边，即邻接表存储
 }* en;
 
@@ -47,7 +47,7 @@ void createG(){
     while(m--){
         cin >> v1 >> v2;
         en = new EN;
-        en->tail = v2;
+        en->VNtail = v2;
         V[v2].in++;
         en->next = V[v1].fstEdge;
         V[v1].fstEdge = en;
@@ -64,12 +64,12 @@ void topSort(){
     while(top){ // 循环直到栈空
 		int t = topStack[top--];
 		for(EN *p=V[t].fstEdge; p; p=p->next){
-			V[p->tail].len = max(V[t].len+1, V[p->tail].len);
-			maxlen = max(V[p->tail].len, maxlen);
+			V[p->VNtail].len = max(V[t].len+1, V[p->VNtail].len);
+			maxlen = max(V[p->VNtail].len, maxlen);
 
             // 如果把p当前所指的边的尾结点入度减一，即删除这条边，则节点的入度为0，将其压入栈
-			if(!(--V[p->tail].in)){
-                topStack[++top] = p->tail;
+			if(!(--V[p->VNtail].in)){
+                topStack[++top] = p->VNtail;
 			}
 		}
 	}
