@@ -125,10 +125,12 @@ int main()
         while(flog)
         {
             cnt++;
+            cout << cnt << endl;
             int m = q.size();
             for (int i = 0; i < m && flog; i++)
             {
                 node tmp = q.front();
+                cout << tmp.folat << endl;
                 q.pop();
                 if (tmp.folat == sum)
                 {

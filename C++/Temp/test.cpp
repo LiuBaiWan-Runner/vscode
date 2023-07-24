@@ -5,11 +5,13 @@ using namespace std;
 
 int main()
 {
-    int i = 2;
-    int a[6] = {0,1,2,3,4,5};
-    cout << i << endl;
-    cout << a[i++] << endl;
-    cout << i << endl;
-    cout << a[++i] << endl;
+    string str = "fghusadjkghyu";
+    char ch[100];
+    for(int i = 0; i < str.size(); i++){
+        ch[i] = str[i];
+    }
+    for(int i = 0; i < str.size(); i++){
+        cout << ch[i] << ' '
+    }
     return 0;
 }
