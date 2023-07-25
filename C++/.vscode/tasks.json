@@ -12,7 +12,7 @@
             "${file}", //指定要编译的是当前文件
             "-o", //指定输出文件的路径和名称
             "F:\\Programming\\vscode\\C++\\.exe\\${fileBasenameNoExtension}.exe",//让可执行文件输出到源码文件所在的文件夹下的bin文件夹内，并且让它的名字和源码文件相同
-            "-fexec-charset=GBK"//解决中文乱码
+            // "-fexec-charset=GBK"//解决中文乱码
             ],
             "presentation": {//执行这个任务时的一些其他设定
             "echo": true,//表示在执行任务时在终端要有输出

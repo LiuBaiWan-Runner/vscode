@@ -28,15 +28,16 @@ struct TownNode{
     EN* fstEdge = NULL;
 }towns[N];
 
+
 void createG(); // 创建图
-bool dfs(int a); // 广度优先遍历
+bool bfs(int a); // 广度优先遍历
 
 int main(){
     cin >> n >> m;
     createG();
     for(int i = 1; i < n; i++){ // 从第一个结点开始广度优先遍历图
         if(!towns[i].state){ // 当前结点的状态为0，即还没有遍历，同时避免遗漏孤立结点和不连通结点
-            if(!dfs(i)){
+            if(!bfs(i)){
                 cout << "-1" << endl;
                 return 0;
             }
@@ -46,7 +47,7 @@ int main(){
     return 0;
 }
 
-// 创建图，采用邻接表方式储存
+// 创建图无向图，采用邻接表方式储存
 void createG(){
     while(m--){
         cin >> t1 >> t2;
@@ -54,12 +55,17 @@ void createG(){
         en->TNtail = t2;
         en->next = towns[t1].fstEdge; // 插入边结点
         towns[t1].fstEdge = en;
+
+        en = new EN;
+        en->TNtail = t1;
+        en->next = towns[t2].fstEdge; // 插入边结点
+        towns[t2].fstEdge = en;
     }
 }
 
 
 // 广度优先遍历当前结点
-bool dfs(int a){
+bool bfs(int a){
     q[tail++] = a; // 把当前结点入队
     towns[a].state = 1; // 修改当前结点的状态为1
     while(head < tail){ // 队列不空

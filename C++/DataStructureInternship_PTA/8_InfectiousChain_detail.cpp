@@ -9,9 +9,6 @@
  *          :然后以传染源为起点对图进行深搜，找到路径长度长于之前的就更新结果，
  *          :如果相等就不更新，由于邻接矩阵是按时间先后顺序存储，这样可以保持结果是最早的最长路径
  */
-
-// 测试集不止一个传染源，详见8_InfectiousChain_detail.cpp
-
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -20,6 +17,7 @@ const int N = 1e4+10;
 vector<int> G[N], ans, tmp; // 动态数组存储图的邻接矩阵，结果序列，临时结果序列
 int n, m, t, mark[N]; // 总人数，当前人接触的人数，被接触的人，标记是否被接触
 int start; // 传染源
+int len = 0;
 
 void createG(); // 创建图
 void findStart(); // 找到传染源
@@ -30,7 +28,14 @@ int main()
     cin >> n;
     createG();
     findStart();
-    dfs(start);
+    for(int i = 0; i < n; i++){ // 提交有一个错误，猜测不止一个传染源，经验证真的不止一个
+        dfs(i);
+        if(ans.size() > len){
+            len = ans.size();
+            start = i;
+        }
+    }
+    // dfs(start);
     cout << ans.size() + 1 << endl; //+1是加上开始结点
     cout << start;
     for(int i:ans){
