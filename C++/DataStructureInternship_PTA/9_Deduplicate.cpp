@@ -55,3 +55,33 @@ bool search_in_vector(vector<string> &a, string target){
     }
     return true; // 找到了
 }
+
+//本题的逻辑结构：线性表
+//本题的存储结构：顺序
+//解题思路和算法：使用动态无序数组unordered_set存储食物集（利用.count())函数查找是否已经存在）
+//               使用动态容器（有序）vector存储结果集，便于按顺序输出
+//               代码逻辑为：输入一个food，看这个food是否在食物集foodSet中
+//               如果在，再看他是否在结果集ans中，如果在就不管，不在就写入ans
+//               然后将food写入食物集foodSet中（所有输入的food都在foodSet中），继续输入下一个food
+//效率：  时间复杂度：O(n^2)
+//        空间复杂度：O(n)
+/*测试数据：
+输入：
+10
+brioche
+camembert
+cappelletti
+savarin
+cheddar
+cappelletti
+tortellni
+croissant
+brioche
+mapotoufu
+
+-------------------------
+输出：
+cappelletti
+brioche
+
+*/
