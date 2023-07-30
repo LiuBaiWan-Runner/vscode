@@ -10,6 +10,7 @@
  *          :最先达到给出的状态的变换次数就为最小变换次数，只需要将给出状态按照操作序列从后往前反方向进行三个变换即可还原
  *          :康托展开：https://blog.csdn.net/ltrbless/article/details/87696372?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522169019677616800184110888%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=169019677616800184110888&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-2-87696372-null-null.142^v91^insertT0,239^v3^insert_chatgpt&utm_term=%E5%BA%B7%E6%89%98%E5%B1%95%E5%BC%80&spm=1018.2226.3001.4187
  *          :将状态结点更换为直接操作整型变量康托数
+ * 更改为从当前状态向初始状态变换
  */
 #include <iostream>
 #include <queue>
@@ -48,13 +49,16 @@ int main()
         bool hashcode[N] = {false};
 
         create_start();
-        cantorNum = cantor(start); // 开始状态的康托数
+        // cantorNum = cantor(start); // 开始状态的康托数
+        cantorNum = cantor(init); // 开始状态的康托数
         
 
         // Node initNode("", cantor(init)); // 创建初始结点，并计算康托数
         // q.push(initNode); // 初始结点压入入队列
 
-        int initvalue = cantor(init);
+        // int initvalue = cantor(init);
+        int initvalue = cantor(start);
+
         q.push(initvalue);
 
         while(flag){
@@ -65,7 +69,9 @@ int main()
 
                 q.pop(); // 队前出队
                 // if(tmp.value == cantorNum){ // 结束条件：当前队前结点的康托数等于开始状态的康托数
+                // if(tmp == cantorNum){
                 if(tmp == cantorNum){
+
                     flag = false;
                     cout << count << endl;
                     
