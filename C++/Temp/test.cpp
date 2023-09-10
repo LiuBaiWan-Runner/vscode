@@ -2,12 +2,6 @@
 using namespace std;
 
 int main() {
-   string s1 = "fcbhjsdabv", s2 = "vferever";
-   if(s1 > s2){
-    cout << s1 << endl;
-   }
-   else{
-    cout << s2 << endl;
-   }
+   cout << "Hello world!!" << endl;
    return 0;
 }
