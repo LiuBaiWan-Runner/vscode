@@ -1,39 +1,44 @@
-LANG=zh_CN.UTF-8
+#include <iostream>
+#include <cmath>
 
-LC_CTYPE=zh_CN.UTF-8
+// 定义一个结构体来表示坐标点
+struct Point {
+    double x;
+    double y;
+};
 
-LC_NUMERIC=zh_CN.UTF-8
+// 生成五角星的坐标点矩阵
+void generateStarCoordinates(Point* points, int numPoints, double majorAxis, double angle) {
+    if (numPoints < 5 || points == nullptr) {
+        std::cerr << "Invalid input" << std::endl;
+        return;
+    }
 
-LC_TIME=zh_CN.UTF-8
+    // 计算五角星的角度
+    double angleIncrement = 2 * M_PI / numPoints;
 
-LC_COLLATE=zh_CN.UTF-8
+    for (int i = 0; i < numPoints; i++) {
+        double currentAngle = angle + i * angleIncrement;
+        double radius = (i % 2 == 0) ? majorAxis : majorAxis / 2.0; // 长轴和短轴交替
 
-LC_MONETARY=zh_CN.UTF-8
+        // 计算坐标点的x和y坐标
+        points[i].x = radius * cos(currentAngle);
+        points[i].y = radius * sin(currentAngle);
+    }
+}
 
-LC_MESSAGES=zh_CN.UTF-8
+int main() {
+    const int numPoints = 10; // 五角星有10个顶点
+    Point starPoints[numPoints];
+    double majorAxis = 500.0; // 长轴长度
+    double angle = M_PI / 6.0; // 与Y轴夹角30度（弧度表示）
 
-LC_PAPER=zh_CN.UTF-8
+    generateStarCoordinates(starPoints, numPoints, majorAxis, angle);
 
-LC_NAME=zh_CN.UTF-8
+    // 输出坐标点
+    for (int i = 0; i < numPoints; i++) {
+        std::cout << "Point " << i << ": (" << starPoints[i].x << ", " << starPoints[i].y << ")" << std::endl;
+    }
 
-LC_ADDRESS=zh_CN.UTF-8
-
-LC_TELEPHONE=zh_CN.UTF-8
-
-LC_MEASUREMENT=zh_CN.UTF-8
-
-LC_IDENTIFICATION=zh_CN.UTF-8
-
-LC_ALL=
-
-
-
-GTK_IM_MODULE=fcitx
-
-QT_IM_MODULE=fcitx
-
-XMODIFIERS=@im=fcitx
-
-SDL_IM_MODULE=fcitx
-
-GLFW_IM_MODULE=ibus
+    return 0;
+}
