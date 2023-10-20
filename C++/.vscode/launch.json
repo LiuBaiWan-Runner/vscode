@@ -24,7 +24,7 @@
         "environment": [],
         "externalConsole": false,
         "MIMode": "gdb",
-        "miDebuggerPath": "D:\\Microsoft VS Code\\mingw64\\bin\\gdb.exe",
+        "miDebuggerPath": "D:\\Environment\\mingw64\\bin\\gdb.exe",
     }
     ]
 }
