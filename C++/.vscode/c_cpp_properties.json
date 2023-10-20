@@ -4,13 +4,13 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceRoot}",
-                "D:/Microsoft VS Code/mingw64/include/**",
-                "D:/Microsoft VS Code/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
-                "D:/Microsoft VS Code/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
-                "D:/Microsoft VS Code/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
-                "D:/Microsoft VS Code/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include",
-                "D:/Microsoft VS Code/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
-                "D:/Microsoft VS Code/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"
+                "D:/Environment/mingw64/include/**",
+                "D:/Environment/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
+                "D:/Environment/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
+                "D:/Environment/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
+                "D:/Environment/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include",
+                "D:/Environment/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
+                "D:/Environment/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"
             ],
             "defines": [
                 "_DEBUG",
@@ -24,20 +24,16 @@
                 "databaseFilename": "",
                 "path": [
                     "${workspaceRoot}",
-                    "D:/Microsoft VS Code/mingw64/include/**",
-                    "D:/Microsoft VS Code/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
-                    "D:/Microsoft VS Code/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
-                    "D:/Microsoft VS Code/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
-                    "D:/Microsoft VS Code/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include",
-                    "D:/Microsoft VS Code/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
-                    "D:/Microsoft VS Code/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"
+                    "D:/Environment/mingw64/include/**",
+                    "D:/Environment/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
+                    "D:/Environment/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
+                    "D:/Environment/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
+                    "D:/Environment/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include",
+                    "D:/Environment/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
+                    "D:/Environment/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"
                 ]
-            },
-             "compilerPath": ""
+            }
         }
     ],
     "version": 4
 }
-
-
-
